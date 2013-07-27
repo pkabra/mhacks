@@ -34,7 +34,7 @@
         </div>
         <nav id="navbar">
             <div class="wrapper">
-                <a href="#head" class="logo" style="font-size:2em; line-height:0;">&lt;hack&gt;M&lt;/hack&gt;</a>
+                <a href="#head" class="logo" style="font-size:2em; line-height:0; color:#000;">&lt;hack&gt;<span style="color:#ffcc00;">M</span>&lt;/hack&gt;</a>
                 <ul class="nav" id="mainnav" style="margin-top:1.5em;">
                     <li><a href="#what">About</a></li>
                     <li><a href="#sponsors">Who's Invited?</a></li>
@@ -58,9 +58,9 @@
     			?>
                 </video>
                 <div class="title">
-                	<div id="logo">
+                	<!-- <div id="logo">
                         <a href="#">&lt;hack&gt;M&lt;/hack&gt;</a>
-                    </div>
+                    </div> -->
                     <div id="info">
                         <a class="button-blue" href="javascript:void(0);">SIGN UP NOW</a>
                         <a class="button-clear" onClick="hideVideo();" style="margin-left:20px;" href="javascript:void(0);">WHERE IS MHACKS</a>
