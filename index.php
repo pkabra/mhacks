@@ -1,3 +1,18 @@
+<?/*
+
+
+$$\      $$\ $$\   $$\  $$$$$$\   $$$$$$\  $$\   $$\  $$$$$$\  
+$$$\    $$$ |$$ |  $$ |$$  __$$\ $$  __$$\ $$ | $$  |$$  __$$\ 
+$$$$\  $$$$ |$$ |  $$ |$$ /  $$ |$$ /  \__|$$ |$$  / $$ /  \__|
+$$\$$\$$ $$ |$$$$$$$$ |$$$$$$$$ |$$ |      $$$$$  /  \$$$$$$\  
+$$ \$$$  $$ |$$  __$$ |$$  __$$ |$$ |      $$  $$<    \____$$\ 
+$$ |\$  /$$ |$$ |  $$ |$$ |  $$ |$$ |  $$\ $$ |\$$\  $$\   $$ |
+$$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
+\__|     \__|\__|  \__|\__|  \__| \______/ \__|  \__| \______/ 
+                                                               
+                                                               
+*/?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -62,8 +77,8 @@
                         <a href="#">&lt;hack&gt;M&lt;/hack&gt;</a>
                     </div> -->
                     <div id="info">
-                        <a class="button-blue" href="javascript:void(0);">SIGN UP NOW</a>
-                        <a class="button-clear" onClick="hideVideo();" style="margin-left:20px;" href="javascript:void(0);">WHERE IS MHACKS</a>
+                        <a class="button-blue" href="javascript:void(0);">Sign Up Now</a>
+                        <a class="button-clear" onClick="hideVideo();" style="margin-left:20px;" href="javascript:void(0);">What's the Venue?</a>
                     </div>
                     <div id="location" style="margin-top:60px;">
                         <h1>Yes, We're not kidding...</h1>
