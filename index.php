@@ -24,7 +24,7 @@
         <![endif]-->
 		
         <div id="loading">
-        	<h1 style="font-size:54px; font-family:'Junction' Helvetica, Arial, sans-serif; margin-top:150px;">&lt;hack&gt;M&lt;/hack&gt;<br>2013</h1>
+        	<h1 style="font-size:54px; font-family:'Junction' Helvetica, Arial, sans-serif; margin-top:150px;">&lt;hack&gt;<span style="color:#ffcc00;">M</span>&lt;/hack&gt;<br>2013</h1>
             <h1><img src="img/loading.gif" id="gif"></h1>
             <h1 id="load-percentage">0%</h1>
             <noscript>
@@ -39,7 +39,7 @@
                     <li><a href="#what">About</a></li>
                     <li><a href="#sponsors">Who's Invited?</a></li>
                     <li><a href="#">Sponsor Us!</a></li>
-                    <li><a href="#" class="button-blue">SIGN UP</a></li>
+                    <li><a href="#" id="sign-up">Sign Up</a></li>
                 </ul>
             </div>
         </nav>

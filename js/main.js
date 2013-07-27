@@ -117,6 +117,6 @@ $(document).ready(function(){
 });
 
 function hideVideo() {
-	$('#background-video').animate({opacity: "0"}, 2000);
-	$('#location').fadeIn(2500);
+	$('#background-video').animate({opacity: "0"}, 1000);
+	$('#location').fadeIn(1500);
 }
