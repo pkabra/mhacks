@@ -24,9 +24,9 @@
         <![endif]-->
 		
         <div id="loading">
-        	<h1 style="font-size:54px; font-family:'Junction' Helvetica, Arial, sans-serif; margin-top:150px;">&lt;hack&gt;<span style="color:#ffcc00;">M</span>&lt;/hack&gt;<br>2013</h1>
+        	<h1 style="font-size:54px; font-family: 'Source Code Pro', sans-serif; margin-top:150px;">&lt;hack&gt;<span style="color:#ffcc00;">M</span>&lt;/hack&gt;<br>2013</h1>
             <h1><img src="img/loading.gif" id="gif"></h1>
-            <h1 id="load-percentage">0%</h1>
+            <h1 id="load-percentage" style="font-family: 'Source Code Pro', sans-serif;">0%</h1>
             <noscript>
             	<h1 style="margin:0; margin-top:-30px;">Javascript Not Enabled</h1>
                 <p align="center" style="margin:0">Our website depends on Javascript to function. Please enable Javascript or <a style="color:blue;" href="http://google.com/chrome" target="_blank">download a browser</a> that supports Javascript</p>
@@ -34,8 +34,8 @@
         </div>
         <nav id="navbar">
             <div class="wrapper">
-                <a href="#head" class="logo">&lt;hack&gt;M&lt;/hack&gt;</a>
-                <ul class="nav" id="mainnav">
+                <a href="#head" class="logo" style="font-size:2em; line-height:0;">&lt;hack&gt;M&lt;/hack&gt;</a>
+                <ul class="nav" id="mainnav" style="margin-top:1.5em;">
                     <li><a href="#what">About</a></li>
                     <li><a href="#sponsors">Who's Invited?</a></li>
                     <li><a href="#">Sponsor Us!</a></li>
@@ -105,7 +105,7 @@
 
     		<div id="footer">
             	<div class="container">
-                	<p>&copy; <a href="#" onClick="mixpanel.track('MPowered Clicked');">MHacks 2013</a> | | Website Design by <a href="http://kabra.com" target="_blank" onClick="mixpanel.track('Pratik Designer Clicked');">Pratik Kabra</a></p>
+                	<p>&copy; <a href="#" onClick="mixpanel.track('MPowered Clicked');">MHacks 2013</a> | | Website by <a href="http://kabra.com" target="_blank" onClick="mixpanel.track('Pratik Designer Clicked');">Pratik Kabra</a></p>
                 </div>
             </div>
 		</div>
