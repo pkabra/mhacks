@@ -92,7 +92,7 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
 
             <div id="content">
             	<div class="container">
-                	<div class="row clearfix">
+                	<div class="row clearfix" style="padding-top:0;">
                     	<h1 style="margin-bottom:40px;">This is as big as it gets.</h1>
                      	<div id="what" class="row_12 clearfix">
                             <div class="grid_12">
