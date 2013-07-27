@@ -121,7 +121,7 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
 
     		<div id="footer">
             	<div class="container">
-                	<p>&copy; <a href="#" onClick="mixpanel.track('MPowered Clicked');">MHacks 2013</a> | | Website by <a href="http://kabra.com" target="_blank" onClick="mixpanel.track('Pratik Designer Clicked');">Pratik Kabra</a></p>
+                	<p>&copy; <a href="#" onClick="mixpanel.track('MPowered Clicked');">MHacks 2013</a> | | Website by <a href="http://kabra.com" target="_blank" onClick="mixpanel.track('Pratik Designer Clicked');">Pratik Kabra</a> and <a href="http://www.thedanyaal.com" target="_blank">Danyaal Rangwala</a></p>
                 </div>
             </div>
 		</div>
