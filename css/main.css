@@ -136,6 +136,7 @@ body{
 
 #main-content{
 	display:none;
+	margin-top: -50px;
 }
 
 .container{
@@ -275,7 +276,7 @@ a.button-clear:active {
 	width:100%;
 	height:50px;
 	text-align:center;
-	background:#fff;
+	background: rgba(255,255,255, 0.75);
 	-webkit-box-shadow:0 2px 7px rgba(20,24,35,0.25);
 	-moz-box-shadow:0 2px 7px rgba(20,24,35,0.25);
 	box-shadow:0 2px 7px rgba(20,24,35,0.25);

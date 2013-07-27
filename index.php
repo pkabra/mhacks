@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="css/960.css">
         <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!-- Shortcut Icon -->
+        <link rel="shortcut icon" type="text/css" href="http://www.med.umich.edu/medschool/mdstat/img/icon_app.png">
     </head>
     <body>    
         <!--[if lt IE 9]>
