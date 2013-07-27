@@ -119,5 +119,6 @@ $(document).ready(function(){
 function hideVideo() {
 	$('#background-video').animate({opacity: "0"}, 1000);
 	$('#location').fadeIn(1500);
-	$(".button-clear").text("Now I'm pumped!").addClass("Pumped");
+	$(".venue-button").text("Now I'm pumped!");
+	$(".inspiration").css("display", "inline");
 }

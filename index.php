@@ -78,7 +78,8 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
                     </div> -->
                     <div id="info">
                         <a class="button-blue" href="javascript:void(0);">Sign Up Now</a>
-                        <a class="button-clear" onClick="hideVideo();" style="margin-left:20px;" href="javascript:void(0);">What's the Venue?</a>
+                        <a class="button-clear venue-button" onClick="hideVideo();" style="margin-left:20px;" href="javascript:void(0);">What's the Venue?</a>
+                        <a class="button-clear inspiration" style="margin-left:20px; display:none;" href="http://www.youtube.com/watch?feature=player_detailpage&v=4wRsEPcR60I&t=302">Some Inspiration..</a>
                     </div>
                     <div id="location" style="margin-top:60px;">
                         <h1>Yes, We're not kidding...</h1>
