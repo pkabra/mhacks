@@ -26,163 +26,70 @@
         <!--[if lt IE 9]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-		
-		<div id="head">
-            <div class="title">
-            	<div id="logo">
-                    <img src="img/vexlogomob.png">
-                </div>
-            </div>  
-                        
-        </div>
-        
-        <div class="nav-container">
-            <ul class="nav" id="mainnav">
-                <li><a href="#head" class="active"><img src="img/vexonly-small.png" style="height:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#entrepreneurs">Showcase</a></li>
-                <li><a href="#space">Space</a></li>
-            </ul>
-        </div>
-                
-        <div id="about">
-        	<div class="container">
-            	<div class="row clearfix">
-                	<h1 style="margin-bottom:40px;">Let's talk about VEX.</h1>
-                 	<div class="row_12 clearfix">
-                    	<div class="grid_2 alpha">&nbsp;</div>
-                        <div class="grid_8">
-                            <h2>What is VEX?</h2>
-                            <p>VEX is a dedicated space for the innovative mind. A storefront and showcase every Sunday from 3pm – 7pm for entrepreneurs and creative artists. VEX provides an outlet for the student body to be exposed to their peer pioneers and be inspired.</p>
-                            <p>For the rest of the week, VEX is a collaborative workspace for students to come and free their imagination in a cool, clean, and cozy environment made by students, for students.</p>
-                        </div>
-                    	<div class="grid_2 omega">&nbsp;</div>
+
+        <nav id="navbar">
+            <div class="wrapper">
+                <a href="#head" class="logo" style="color:#000;">&lt;hack&gt;<span style="color:#ffcc00;">M</span>&lt;/hack&gt;</a>
+                <ul class="nav" id="mainnav">
+                    <li><a href="#what">About</a></li>
+                    <li><a href="#sponsors">Who's Invited?</a></li>
+                    <li><a href="#">Sponsor Us!</a></li>
+                    <li><a href="#" id="sign-up">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="main-content">
+            <div id="head">
+                <div class="title">
+                    <div id="logo">
+                        <a href="#">&lt;hack&gt;M&lt;/hack&gt;</a>
                     </div>
-                 	<div class="row_12 clearfix">
-                        <div class="grid_6 alpha">  
-                            <h2>What can we sell?</h2>
-                            <p>The VEX team makes decisions on products that entrepreneurs can and cannot sell based on the readiness of the venture, value that the venture can bring to the UM community and whether the venture is legally acceptable in the UM space.</p>
+                    <div id="info">
+                        <a class="button-blue" href="javascript:void(0);">Sign Up Now</a>
+                        <a class="button-clear venue-button" onClick="hideVideo();" style="margin-left:20px;" href="http://www.youtube.com/watch?feature=player_detailpage&v=4wRsEPcR60I&t=302">Some Inspiration..</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content">
+                <div class="container">
+                    <div class="row clearfix">
+                        <h1>This is as big as it gets.</h1>
+                        <div id="what" class="row_12 clearfix">
+                            <div class="grid_12">
+                                <h2>
+                                    <span class="mega" style="margin-left:0;">48</span> hours
+                                    <span class="mega">500+</span> hackers
+                                    <span class="mega">$10000+</span> in prizes
+                                </h2>
+                            </div>
                         </div>
-                        <div class="grid_6 omega">
-                            <h2>How can I get involved?</h2>
-                            <p>If you are an entrepreneur, apply using our application. If you’re customer or investor please feel free to click here and use our contact form to get in touch with the team.</p>
+                        <div class="row_12 clearfix">
+                            <div class="grid_12">
+                                <h2>&middot; breakfast &middot; lunch &middot; dinner &middot; energy drinks &middot; so much swag &middot;</h2>
+                                <h2>February 2014 @ <span style="color:#ffcb05;">The Big House</span></h2> 
+                            </div>
+                        </div>
+                        <div id="sponsors" class="row_12 clearfix">
+                            <h1 style="margin: 40px 0;">Whose Invited?</h1>
+                            <div class="grid_12">
+                                <img src="img/companies/facebook.png" class="company-logo" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div id="entrepreneurs">
-        	<div class="container">
-            	<div class="row clearfix">
-                	<h1>The Event</h1>
-                    <div class="row_12 clearfix">
-                        <div class="grid_2 alpha">&nbsp;</div>
-                        <div class="grid_8">
-                            <p>VEX will be hosting its opening showcase on April 14th, 2013 from 3pm to 7pm. The VEX Space is located opposite the University Computer Showcase in the Basement of the Michigan Union.</p>
-                            <p>Take a look at some of the companies we will be hosting on our opening day.</p>
-                        </div>
-                        <div class="grid_2 omega">&nbsp;</div>
-                    </div>
-                    <div class="row_12 clearfix">
-                    	<div class="grid_4 alpha">
-                        	<a href="https://www.facebook.com/eatbeetbox" target="_blank" onClick="mixpanel.track('BeetBox Clicked');"><div class="company" id="beetbox"></div></a>
-                        </div>
-                    	<div class="grid_4">
-                        	<a href="http://www.arborhavenfoods.com/" target="_blank" onClick="mixpanel.track('ArborFoods Clicked');"><div class="company" id="arborfoods"></div></a>
-                        </div>
-                    	<div class="grid_4 omega">
-                        	<a href="https://www.facebook.com/ReSourceFundMi" target="_blank" onClick="mixpanel.track('Resource Fund Clicked');"><div class="company" id="resourcefund"></div></a>
-                        </div>
-                    </div>
-                    <div class="row_12 clearfix">
-                    	<div class="grid_4 alpha">
-                        	<a href="https://www.facebook.com/morealert" target="_blank" onClick="mixpanel.track('GetUpAndGo Clicked');"><div class="company" id="getupandgo"></div></a>
-                        </div>
-                    	<div class="grid_4">
-                        	<a href="http://hg8i.com/perimeter/" target="_blank" onClick="mixpanel.track('Perimeter Clicked');"><div class="company" id="perimeter"></div></a>
-                        </div>
-                    	<div class="grid_4 omega">
-                        	<a href="http://umich.marketloco.com/" target="_blank" onClick="mixpanel.track('MarketLoco Clicked');"><div class="company" id="marketloco"></div></a>
-                        </div>
-                    </div>
-                    <div class="row_12 clearfix">
-                    	<div class="grid_4 alpha">
-                        	<a href="http://projectwolverine.org" target="_blank" onClick="mixpanel.track('Project Wolverine Clicked');"><div class="company" id="projectwolverine"></div></a>
-                        </div>
-                    	<div class="grid_4">
-                        	<a href="http://www.warmilu.org/" target="_blank" onClick="mixpanel.track('Warmilu Clicked');"><div class="company" id="warmilu"></div></a>
-                        </div>
-                    	<div class="grid_4 omega">
-                        	<a href="http://stamp.fm/" target="_blank" onClick="mixpanel.track('Stamp Clicked');"><div class="company" id="stamp"></div></a>
-                        </div>
-                    </div>
-                    <div class="row_12 clearfix">
-                    	<div class="grid_4 alpha">
-                        	<a href="http://fetchnotes.com" target="_blank" onClick="mixpanel.track('Fetchnotes Clicked');"><div class="company" id="fetchnotes"></div></a>
-                        </div>
-                    	<div class="grid_4">
-                        	<a href="http://www.ripplesense.com" target="_blank" onClick="mixpanel.track('RippleSense Clicked');"><div class="company" id="ripple"></div></a>
-                        </div>
-                    	<div class="grid_4 omega">
-                        	<a href="https://www.facebook.com/savethesmile" target="_blank" onClick="mixpanel.track('Smiling Clicked');"><div class="company" id="smiling"></div></a>
-                        </div>
-                    </div>
-                    <div class="row_12 clearfix">
-                    	<div class="grid_4 alpha">
-                        	<a onClick="mixpanel.track('MyLocals Clicked');"><div class="company" id="mylocals"></div></a>
-                        </div>
-                    	<div class="grid_4">
-                        &nbsp;
-                        </div>
-                    	<div class="grid_4 omega">
-                        &nbsp;
-                        </div>
-                    </div>
+
+            <div id="footer">
+                <div class="container">
+                    <p>&copy; <a href="#">MHacks 2013</a> | | Website by <a href="http://kabra.com" target="_blank">Pratik Kabra</a> and <a href="http://www.thedanyaal.com" target="_blank">Danyaal Rangwala</a></p>
                 </div>
-            </div>
-        </div>
-        
-        <div id="space">
-            <div class="container">
-            	<h1>Watch Our Space Grow</h1>
-                <div class="row_12 clearfix">
-                	<div class="grid_2 alpha">&nbsp;</div>
-                    <div class="grid_8">
-                        <p>The VEX Space is located opposite the University Computer Showcase in the Basement of the Michigan Union.</p>
-                        <p>VEX is the only current student organization to have a dedicated space on campus at the University of Michigan.</p>
-                    </div>
-                	<div class="grid_2 omega">&nbsp;</div>
-                </div>
-                <div class="space-scroll">
-                	<div id="panorama">
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-		<div id="footer">
-        	<div class="container">
-            	<p>&copy; <a href="http://mpowered.umich.edu" target="_blank" onClick="mixpanel.track('MPowered Clicked');">MPowered 2013</a> | | Website Design by <a href="http://kabra.com" target="_blank" onClick="mixpanel.track('Designer Clicked');">Pratik Kabra</a></p>
-            </div>
-        </div>
-        
-		<!-- Modal -->
-        <div class="overlay">
-        	<div class="modal">
-                <h2 class="entleft">Are you an <a style="color:#ffde16;" href="https://wufoo03.wufoo.com/forms/z7q7r7/" onClick="mixpanel.track('Entrepreneur Application Clicked');" target="_blank">Entrepreneur</a></h2>
-                <h2 class="artright">Are you an <a style="color:#ffde16;" href="https://wufoo03.wufoo.com/forms/z7q7m3/" onClick="mixpanel.track('Artist Application Clicked');" target="_blank">Artist</a></h2>
             </div>
         </div>
 
 		<!-- Le Scripts -->
 		<script src="js/vendor/jquery-1.9.0.min.js"></script>
-        <script src="js/jquery.mCustomScrollbar.min.js"></script>
-        <script src="js/jquery.mousewheel.min.js"></script>
-        <!--[if lt IE 9]>
-            <script src="js/jquery.backgroundSize.js"></script>
-        <![endif]-->	
-        <script src="js/jquery.sticky.js"></script>
         <script src="js/mobilemain.js"></script>
 
     </body>
