@@ -60,7 +60,7 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
         </nav>
 
 		<div id="main-content">
-    		<div id="head" style="background:url('img/bighouse.jpg') no-repeat; background-size:cover;">
+    		<div id="head" style="background:url('img/MichiganStadium.jpg') no-repeat; background-size:cover;">
                 <video id="background-video" loop preload="auto">
                 <?php
                     //Firefox doesn't support mp4
