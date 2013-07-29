@@ -1,5 +1,4 @@
-<?/*
-
+<!--
 
 $$\      $$\ $$\   $$\  $$$$$$\   $$$$$$\  $$\   $$\  $$$$$$\  
 $$$\    $$$ |$$ |  $$ |$$  __$$\ $$  __$$\ $$ | $$  |$$  __$$\ 
@@ -9,9 +8,8 @@ $$ \$$$  $$ |$$  __$$ |$$  __$$ |$$ |      $$  $$<    \____$$\
 $$ |\$  /$$ |$$ |  $$ |$$ |  $$ |$$ |  $$\ $$ |\$$\  $$\   $$ |
 $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
 \__|     \__|\__|  \__|\__|  \__| \______/ \__|  \__| \______/ 
-                                                               
-                                                               
-*/?>
+                                                                                                                            
+-->
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -155,6 +153,15 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
             </div>
 		</div>
 
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-42726351-1', 'mhacks.org');
+          ga('send', 'pageview');
+        </script>
 		<!-- Le Scripts -->
 		<script src="js/vendor/jquery-1.9.0.min.js"></script>
         <!--[if lt IE 9]>
@@ -162,7 +169,5 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
         <![endif]-->
         <script src="js/jquery.sticky.js" type="text/javascript"></script>
         <script src="js/main.js?v=<?php print time(); ?>"></script>
-
-		<!-- Say hello to Alex Lee and his amazing hips -->
     </body>
 </html>
