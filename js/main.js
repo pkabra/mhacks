@@ -43,13 +43,17 @@ function loadWebsite(){
 				setTimeout(function(){
 					$('#loading').fadeOut(1000);
 					$('#navbar').fadeIn(1000);
-			$('#mute-button').fadeIn(1000);
-					$('#main-content').fadeIn(1000, function(){ video.play(); });
+					$('#mute-button').fadeIn(1000);
+					$('#main-content').fadeIn(1000, function(){
+						ga('send', 'Video', 'Success', 'Successful Video Load');
+						video.play();
+					});
 				}, 1500);
 				buffercheck=window.clearInterval(buffercheck);
 			}
 		}
 		else if(video.readyState == 0 && video.canPlayType() == "" && refreshcount > 50){
+			ga('send', 'Video', 'Failure', 'Ready state not changed.');
 			$('#background-video').remove();
 			$('#head').css({height: '600px'});
 			if($(window).height() > 650){
@@ -74,6 +78,7 @@ $(document).ready(function(){
 	//Begin Nasty Browser Compatibility stuff
 	if(navigator.sayswho[0] == "MSIE" || (video.tagName != "video" && video.tagName != "VIDEO")){
 		if(navigator.sayswho[1] < 9 || (video.tagName != "video" && video.tagName != "VIDEO")){
+			ga('send', 'Video', 'Failure', 'IE Load Failure');
 			$('#background-video').remove();
 			$('#head').css({height: '600px'});
 			if($(window).height() > 650){
@@ -92,6 +97,12 @@ $(document).ready(function(){
 	}
 
 	$('#navbar').sticky({topSpacing: 0});
+
+	$('#navbar ul li a').each(function(index){
+		$(this).click(function(){
+			ga('send', 'Navbar', 'Click', $(this).attr('href'));
+		});
+	});
 
 	//Get Sections top position
 	function getTargetTop(elem){
@@ -130,10 +141,12 @@ function hideVideo() {
 function switchAudio() {
 	//if video is muted, unmute and show audo on button and vice versa
 	if(video.muted) {
+		ga('send', 'Audio', 'Unmute');
 		video.muted = false;
 		$('#mute-button').css("background", "url('img/audio-on.png') no-repeat").css('background-size', 'cover');
 	}
 	else {
+		ga('send', 'Audio', 'Mute');
 		video.muted = true;
 		$('#mute-button').css("background", "url('img/audio-mute.png') no-repeat").css('background-size', 'cover');
 	}

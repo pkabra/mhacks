@@ -71,8 +71,8 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
                         <a href="#"><img src="img/logo-white.png"></a>
                     </div>
                     <div id="info">
-                        <a class="button-blue" href="javascript:void(0);">Sign Up Now</a>
-                        <a class="button-clear venue-button" onClick="hideVideo();" style="margin-left:20px;" href="javascript:void(0);">What's the Venue?</a>
+                        <a class="button-blue" onclick="ga('send', 'Links', 'Click', 'Signup Button');" href="javascript:void(0);">Sign Up Now</a>
+                        <a class="button-clear venue-button" onClick="hideVideo();" onclick="ga('send', 'Links', 'Click', 'Venue Button');" style="margin-left:20px;" href="javascript:void(0);">What's the Venue?</a>
                     </div>
                     <div id="facepile">
                         <div class="fb-facepile" data-href="http://facebook.com/MHacksHackathon" data-max-rows="1" data-size="large" data-width="300" data-colorscheme="dark"></div>
