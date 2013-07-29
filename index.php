@@ -37,9 +37,16 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
         <!--[if lt IE 9]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-		
+		<div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=265693566885388";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
         <div id="loading">
-        	<h1 style="font-size:54px; font-family: 'Source Code Pro', sans-serif; margin-top:150px;">&lt;hack&gt;<span style="color:#ffcc00;">M</span>&lt;/hack&gt;<br>2013</h1>
+        	<h1><img src="img/logo-black.png" style="width:200px"></h1>
             <h1><img src="img/loading.gif" id="gif"></h1>
             <h1 id="load-percentage" style="font-family: 'Source Code Pro', sans-serif;">0%</h1>
             <noscript>
@@ -47,21 +54,10 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
                 <p align="center" style="margin:0">Our website depends on Javascript to function. Please enable Javascript or <a style="color:blue;" href="http://google.com/chrome" target="_blank">download a browser</a> that supports Javascript</p>
             </noscript>
         </div>
-        <nav id="navbar">
-            <div class="wrapper">
-                <a href="#head" class="logo" style="font-size:2em; line-height:0; color:#000;">&lt;hack&gt;<span style="color:#ffcc00;">M</span>&lt;/hack&gt;</a>
-                <ul class="nav" id="mainnav" style="margin-top:1.5em;">
-                    <li><a href="#what">About</a></li>
-                    <li><a href="#sponsors">Who's Invited?</a></li>
-                    <li><a href="#">Sponsor Us!</a></li>
-                    <li><a href="#" id="sign-up">Sign Up</a></li>
-                </ul>
-            </div>
-        </nav>
-
+        <div id="mute-button" onclick="switchAudio();" style="background-size:cover; background-position:center;"></div>
 		<div id="main-content">
     		<div id="head" style="background:url('img/MichiganStadium.jpg') no-repeat; background-size:cover;">
-                <video id="background-video" loop preload="auto">
+                <video id="background-video" loop preload="auto" controls>
                 <?php
                     //Firefox doesn't support mp4
         			if(strpos($_SERVER['HTTP_USER_AGENT'], "Firefox")){
@@ -73,41 +69,74 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
     			?>
                 </video>
                 <div class="title">
-                	<!-- <div id="logo">
-                        <a href="#">&lt;hack&gt;M&lt;/hack&gt;</a>
-                    </div> -->
+                	<div id="logo">
+                        <a href="#"><img src="img/logo-white.png"></a>
+                    </div>
                     <div id="info">
                         <a class="button-blue" href="javascript:void(0);">Sign Up Now</a>
                         <a class="button-clear venue-button" onClick="hideVideo();" style="margin-left:20px;" href="javascript:void(0);">What's the Venue?</a>
-                        <a class="button-clear inspiration" style="margin-left:20px; display:none;" href="http://www.youtube.com/watch?feature=player_detailpage&v=4wRsEPcR60I&t=302">Some Inspiration..</a>
                     </div>
-                    <div id="location" style="margin-top:60px;">
+                    <div id="facepile">
+                        <div class="fb-facepile" data-href="http://facebook.com/MHacksHackathon" data-max-rows="1" data-size="large" data-width="300" data-colorscheme="dark"></div>
+                    </div>
+                    <div id="location">
                         <h1>Yes, We're not kidding...</h1>
                         <h1>MHacks 2014 @ <span style="color:#ffff00;">The Big House</span></h1>
                         <h1>Its going to be EPIC</h1>
                     </div>
-                </div>  
-                            
+                </div>    
             </div>
+
+            <nav id="navbar">
+                <div class="wrapper">
+                    <a href="#head" class="logo"><img src="img/logo-black.png"></a>
+                    <ul class="nav" id="mainnav">
+                        <li><a href="#what">Where!</a></li>
+                        <li><a href="#included">What's free!</a></li>                        
+                        <li><a href="#sponsors">Who's Invited?</a></li>
+                        <li><a href="#">Sponsor Us!</a></li>
+                        <li><a href="#" id="sign-up">Sign Up</a></li>
+                    </ul>
+                </div>
+            </nav>
+
 
             <div id="content">
             	<div class="container">
-                	<div class="row clearfix" style="padding-top:0;">
+                	<div class="row clearfix">
                     	<h1 style="margin-bottom:40px;">This is as big as it gets.</h1>
                      	<div id="what" class="row_12 clearfix">
                             <div class="grid_12">
                                 <h2>
-                                    <span class="mega" style="margin-left:0;">48</span> hours
+                                    <span class="mega" style="margin-left:0;">36</span> hours
                                     <span class="mega">500+</span> hackers
-                                    <span class="mega">$10000+</span> in prizes
+                                    <span class="mega">$20000+</span> in prizes
                                 </h2>
                             </div>
                         </div>
                         <div class="row_12 clearfix">
                             <div class="grid_12">
-                                <h2>&middot; breakfast &middot; lunch &middot; dinner &middot; energy drinks &middot; so much swag &middot;</h2>
                                 <h2>February 2014 @ <span style="color:#ffcb05;">The Big House</span></h2> 
                             </div>
+                        </div>
+                        <div id="included" class="row_12 clearfix">
+                            <h1>What's included?</h1>
+                            <div class="grid_5 alpha" style="padding:20px; border:1px solid #ccc;">
+                                <h2>loads to eat. breakfast, lunch, dinner and a never ending supply of snacks...</h2>
+                                <img src="img/food.jpg" style="width:100%;">
+                            </div>
+                            <div class="grid_5 omega" style="padding:20px; border:1px solid #ccc; min-height:424px;">
+                                <h2>...free transport reinbursement</h2>
+                                <img src="img/transport.jpg" style="width:100%; margin-top: 65px;">
+                            </div>
+                            <!-- Start next row -->
+                            <div class="grid_1 alpha">&nbsp;</div>
+                            <div class="grid_9" style="padding:20px; margin-left:60px; border:1px solid #ccc; margin-top:50px;">
+                                <h2>and sooo much caffeine...</h2>
+                                <img src="img/redbull.jpg" style="width:45%; float:left;">
+                                <img src="img/brownies.jpg" style="width:45%; float:right;">
+                            </div>
+                            <div class="grid_1 omega">&nbsp;</div>
                         </div>
                         <div id="sponsors" class="row_12 clearfix">
                             <h1>Whose Invited?</h1>
@@ -130,7 +159,8 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
 		<script src="js/vendor/jquery-1.9.0.min.js"></script>
         <!--[if lt IE 9]>
             <script src="js/jquery.backgroundSize.js"></script>
-        <![endif]-->	
+        <![endif]-->
+        <script src="js/jquery.sticky.js" type="text/javascript"></script>
         <script src="js/main.js?v=<?php print time(); ?>"></script>
 
 		<!-- Say hello to Alex Lee and his amazing hips -->
