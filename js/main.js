@@ -43,6 +43,7 @@ function loadWebsite(){
 				setTimeout(function(){
 					$('#loading').fadeOut(1000);
 					$('#navbar').fadeIn(1000);
+			$('#mute-button').fadeIn(1000);
 					$('#main-content').fadeIn(1000, function(){ video.play(); });
 				}, 1500);
 				buffercheck=window.clearInterval(buffercheck);
@@ -90,13 +91,15 @@ $(document).ready(function(){
 		loadWebsite();
 	}
 
+	$('#navbar').sticky({topSpacing: 0});
+
 	//Get Sections top position
 	function getTargetTop(elem){
 		//gets the id of the section header
 		//from the navigation's href e.g. ("#html")
 		var id = elem.attr("href");
 		//Height of the navigation
-		var offset = 60;
+		var offset = 80;
 		//Gets the distance from the top and 
 		//subtracts the height of the nav.
 		return $(id).offset().top - offset;
@@ -120,5 +123,18 @@ function hideVideo() {
 	$('#background-video').animate({opacity: "0"}, 1000);
 	$('#location').fadeIn(1500);
 	$(".venue-button").text("Now I'm pumped!");
-	$(".inspiration").css("display", "inline");
+	//Setting timeout because button would cause fast redirect issue
+	setTimeout(function(){$('.venue-button').attr('href', 'https://www.facebook.com/events/191595097676108/').attr('target', '_blank');}, 1000);
+}
+
+function switchAudio() {
+	//if video is muted, unmute and show audo on button and vice versa
+	if(video.muted) {
+		video.muted = false;
+		$('#mute-button').css("background", "url('img/audio-on.png') no-repeat").css('background-size', 'cover');
+	}
+	else {
+		video.muted = true;
+		$('#mute-button').css("background", "url('img/audio-mute.png') no-repeat").css('background-size', 'cover');
+	}
 }
