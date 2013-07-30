@@ -21,6 +21,11 @@ $(document).ready(function(){
 		mute();
 	});
 
+	$('.mute').click(function(e){
+		switchAudio();
+		return false;
+	});
+
 	$('#big-house').hover(function(){
 		$('.big-house-bg').addClass('colored');
 	}, function(){

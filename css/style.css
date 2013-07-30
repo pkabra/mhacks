@@ -83,9 +83,9 @@ html, body {
 }
 
 .big-house-bg {
-	-webkit-transition: -webkit-filter 1s;  
-	background-size:cover;
-	-webkit-filter: grayscale(100%);
+/*	-webkit-transition: -webkit-filter 3s;  
+*/	background-size:cover;
+	-webkit-filter: grayscale(50%);
 	background-image:url(../img/bighouse3.jpg);
 	position:absolute;
 	top:0;
