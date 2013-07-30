@@ -404,13 +404,12 @@ a.button-clear:active {
 	font-weight: 200;
 	font-size:40px;
 	line-height:44px;
-	font-family: 'Source Code Pro', Helvetica, Arial, sans-serif;
+	font-family: 'Junction', Helvetica, Arial, sans-serif;
 }
 
 #content p{
 	font-family: 'Junction', Helvetica, Arial, sans-serif;
 	line-height: 1.2;
-	margin-top:-20px;
 	font-size:28px;
 	color:#6a7181;
 	-webkit-font-smoothing: antialiased;
@@ -435,6 +434,33 @@ a.button-clear:active {
 
 #content img.company-logo {
 	width:100%;
+}
+
+#about .left {
+	padding-left:80px;
+	width:45%;
+	float:left;
+}
+
+#about .right {
+	width:37%;
+	float:right;
+	padding-right:80px;
+}
+
+#about .smallphotos {
+	width:100%;
+	margin-top:15px;
+}
+
+#about img {
+	width:100%;
+}
+
+#about p {
+	text-align: left;
+	color:#171717;
+	line-height: 0.8;
 }
 
 /* Footer */
@@ -592,6 +618,19 @@ a.button-clear:active {
 		margin-left:40px;
 		font-size:36px;
 	}
+
+	#about .left {
+		padding-left:100px;
+	}
+
+	#about .right {
+		padding-right:100px;
+	}
+
+	#about p {
+		line-height:1.2;
+	}
+
 
 }
 

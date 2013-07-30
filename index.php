@@ -47,15 +47,8 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
 		<div id="main-content">
     		<div id="head">
                 <video id="background-video" loop preload="auto" controls autoplay>
-                <?php
-                    //Firefox doesn't support mp4
-        			if(strpos($_SERVER['HTTP_USER_AGENT'], "Firefox")){
-                        echo '<source src="video/mhacks.ogg" type="video/ogg">';
-        			}
-        			else{
-                        echo '<source src="video/mhacks.mp4" type="video/mp4">';
-        			}
-    			?>
+                    <source src="video/mhacks.mp4" type="video/mp4">
+                    <source src="video/mhacks.ogg" type="video/ogg">
                 </video>
                 <div class="title">
                 	<div id="logo">
@@ -79,9 +72,26 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
             <div id="content">
             	<div class="container">
                 	<div class="row clearfix">
-                    	<h1 style="margin-bottom:40px;">MHacks 2014 at The Big House</h1>
+                    	<h1>MHacks 2014 at The Big House</h1>
                         <p>The best student hackathon meets<br>the biggest stadium in America</p>
                         <img src="img/stadium-fade.jpg" style="width:100%;">
+                    </div>
+                    <div id="about" class="row clearfix" style="padding-top:100px;">
+                        <div class="left" style="padding-top:10px;">
+                            <p>1500+ hackers</p>
+                            <p>36 hours</p>
+                            <p>$20000 in prizes</p>
+                            <p>Travel Reimbursement</p>
+                            <p>Endless Food</p>
+                            <p>So Much Swag</p>
+                        </div>
+                        <div class="right">
+                            <img src="img/endlessfood.jpg" style="">
+                            <div class="smallphotos">
+                                <img src="img/hack.jpg" style="width:48%;">
+                                <img src="img/getupandgo.jpg" style="width:48%; float:right;">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
