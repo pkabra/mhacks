@@ -126,4 +126,21 @@ MHACKS IS FOREVER
 		text-align: center;
 	}
 
+	.contact-info {
+		width: 300px;
+		height: auto;
+		position: relative;
+		margin:0 auto;
+		float: none;
+		top: 20px;
+		margin-bottom: 50px;
+		font-size: 18px;
+		line-height: 1.2em;
+		text-align: center;
+	}
+
+	.contact-info > h3 {
+		font-size:30px;;
+	}
+
 }

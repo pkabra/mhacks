@@ -118,6 +118,7 @@ html, body {
 	-webkit-box-sizing: border-box; 
 	box-sizing: border-box;
 	padding:0 20px;
+	position:relative;
 }
 
 
@@ -260,6 +261,7 @@ html, body {
 		text-align: left;
 		padding-right: 200px;
 		margin-top:-30px;
+		margin-bottom: 20px;
 	}
 
 	#big-house > .container > h1 {
@@ -276,7 +278,7 @@ html, body {
 		float: right;
 		font-size: 28px;
 		line-height: 30px;
-		margin-top: 40px;
+		margin-top: 10px;
 		text-align: right;
 		text-shadow: 1px 1px 3px rgba(50, 50, 50, 1);
 	}
@@ -362,6 +364,37 @@ html, body {
 		font-size: 16px;
 		line-height: 1.2em;
 		margin-bottom: 0px;
+	}
+
+	.contact-info {
+		width: 300px;
+		height: 200px;
+		position: absolute;
+		right: 5px;
+		top: 90px;
+		font-size: 18px;
+		line-height: 1.2em;
+		text-align: right;
+	}
+
+	.contact-info > h3 {
+		margin: 0 0 10px 0;
+	}
+
+	.twitter-follow-button {
+		margin: 5px -25px 5px 0;
+	}
+
+	.fb-like {
+		margin: 5px 0;
+	}
+
+	.email-us {
+		text-transform: none;
+		font-weight:400;
+		text-shadow:none;
+		padding-right:5px;
+		padding-top: 20px;
 	}
 
 
