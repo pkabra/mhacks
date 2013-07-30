@@ -3,24 +3,6 @@ var videobuffer;
 var video = document.getElementById('background-video');
 var refreshcount = 0;
 
-function preload(){
-	videobuffer = video.buffered.end(0) / video.duration;
-	
-	percentage = Math.round((videobuffer/0.05)*100)
-	
-	if(percentage >= 100){
-		$('#load-percentage').empty().append('100%');
-	}
-	else{
-		$('#load-percentage').empty().append(percentage+'%');
-	}
-	
-	if(videobuffer > 0.05){
-		return true;
-	}
-	else return false;
-}
-
 navigator.sayswho= (function(){
     var N= navigator.appName, ua= navigator.userAgent, tem;
     var M= ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
@@ -36,36 +18,6 @@ function loadWebsite(){
 		video.play();
 	}
 	
-	buffercheck = setInterval(function(){
-		if(video.readyState > 0){
-			video.pause();
-			if(preload()){
-				setTimeout(function(){
-					$('#loading').fadeOut(1000);
-					$('#navbar').fadeIn(1000);
-					$('#mute-button').fadeIn(1000);
-					$('#main-content').fadeIn(1000, function(){
-						ga('send', 'Video', 'Success', 'Successful Video Load');
-						video.play();
-					});
-				}, 1500);
-				buffercheck=window.clearInterval(buffercheck);
-			}
-		}
-		else if(video.readyState == 0 && video.canPlayType() == "" && refreshcount > 50){
-			ga('send', 'Video', 'Failure', 'Ready state not changed.');
-			$('#background-video').remove();
-			$('#head').css({height: '600px'});
-			if($(window).height() > 650){
-				$('#head').css({height: '750px'});
-			}
-			$('#loading').fadeOut(1000);
-			$('#navbar').fadeIn(1000);
-			$('#main-content').fadeIn(1000);
-			window.clearInterval(buffercheck);
-		}
-		else refreshcount++;
-	}, 200);
 }
 
 $(document).ready(function(){
@@ -80,20 +32,15 @@ $(document).ready(function(){
 		if(navigator.sayswho[1] < 9 || (video.tagName != "video" && video.tagName != "VIDEO")){
 			ga('send', 'Video', 'Failure', 'IE Load Failure');
 			$('#background-video').remove();
-			$('#head').css({height: '600px'});
+			$('#head').css({height: '600px', background: 'url(img/bighouse.jpg) no-repeat'}).css('background-size', 'cover').css('background-position','center');
 			if($(window).height() > 650){
 				$('#head').css({height: '750px'});
 			}
-			$('#loading').fadeOut(1000);
-			$('#navbar').fadeIn(1000);
-			$('#main-content').fadeIn(1000);
-		}
-		else{
-			loadWebsite();
 		}
 	}
-	else {
-		loadWebsite();
+
+	if(navigator.sayswho[0] == "Firefox" || navigator.sayswho[0] == "MSIE"){
+		video.play();
 	}
 
 	$('#navbar').sticky({topSpacing: 0});

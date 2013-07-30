@@ -110,24 +110,6 @@ a:visited {
 
 }
 
-@font-face {
-    font-family: 'OstrichSans';
-    src: url('../fonts/ostrich-regular-webfont.eot');
-    src: url('../fonts/ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ostrich-regular-webfont.woff') format('woff'),
-         url('../fonts/ostrich-regular-webfont.ttf') format('truetype'),
-         url('../fonts/ostrich-regular-webfont.svg#ostrich-regular-webfont') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-/* SOURCE CODE PRO */
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
-
-/* ROBOTO */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,900italic,900,700italic,700,500italic,400italic,500);
-
 
 /* ==========================================================================
    Author's custom styles
@@ -135,13 +117,12 @@ a:visited {
 
 /* Layout */
 body{
-	font-family: 'Source Code Pro', sans-serif;
+	font-family: 'Junction', Helvetica, Arial, sans-serif;
 	padding-top:50px;
 	background:#fafafa;
 }
 
 #main-content{
-	display:none;
 	margin-top: -50px;
 }
 
@@ -151,9 +132,9 @@ body{
 }
 
 .row{
+	padding-top:40px;
 	width:960px;
 	min-height:600px;
-	padding:40px;
 	margin:0 auto;
 	background:#fff;
 }
@@ -164,17 +145,27 @@ h2,
 h3,
 h4,
 h5{
-	font-weight:600;
+	font-weight:normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
 }
 
 p{
 	font-weight:200;
 	font-size:14px;
 	text-align:center;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
 }
 
 h1{
-	font-family: 'Source Code Pro', sans-serif;
+	font-family: 'Junction', Helvetica, Arial, sans-serif;
 	font-size:34px;
 	text-align:center;
 }
@@ -273,7 +264,6 @@ a.button-clear:active {
 }
 
 #mute-button {
-	display:none;
 	width:30px;
 	height:30px;
 	position:fixed;
@@ -354,7 +344,6 @@ a.button-clear:active {
 	overflow:hidden;
 	color:#fff;
 	font-family: 'Source Code Pro', sans-serif;
-	max-height:700px;
 }
 
 #background-video{
@@ -412,17 +401,29 @@ a.button-clear:active {
 }
 
 #content h1{
-	font-size:55px;
+	font-weight: 200;
+	font-size:40px;
 	line-height:44px;
-	font-family: 'Source Code Pro', sans-serif;
-	text-transform: uppercase;
+	font-family: 'Source Code Pro', Helvetica, Arial, sans-serif;
+}
+
+#content p{
+	font-family: 'Junction', Helvetica, Arial, sans-serif;
+	line-height: 1.2;
+	margin-top:-20px;
+	font-size:28px;
+	color:#6a7181;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
 }
 
 #content .row {
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-	border-radius: 20px 20px 0 0;
 	border:1px solid #e6e6e6;
 }
 
@@ -564,10 +565,6 @@ a.button-clear:active {
 	.row{
 		width:1140px;
 		margin:0 auto;
-	}
-
-	#content h1{
-		font-size:75px;
 	}
 
 	#head .title{
