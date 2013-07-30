@@ -47,16 +47,16 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
 		<div id="main-content">
     		<div id="head">
                 <video id="background-video" loop preload="auto" controls autoplay>
-                    <source src="video/mhacks.mp4" type="video/mp4">
-                    <source src="video/mhacks.ogg" type="video/ogg">
+                    <source src="./video/mhacks.mp4" type="video/mp4">
+                    <source src="./video/mhacks.ogg" type="video/ogg">
                 </video>
                 <div class="title">
                 	<div id="logo">
                         <a href="#"><img src="img/logo-white.png"></a>
                     </div>
                     <div id="info">
-                        <a class="button-blue" onclick="ga('send', 'Links', 'Click', 'Signup Button');" href="javascript:void(0);">Sign Up Now</a>
-                        <a class="button-clear venue-button" onClick="hideVideo();" onclick="ga('send', 'Links', 'Click', 'Venue Button');" style="margin-left:20px;" href="javascript:void(0);">What's the Venue?</a>
+                        <a class="button-blue" onclick="ga('send', 'Links', 'Click', 'Signup Button');" href="http://mhacks.eventbrite.com">Sign Up Now</a>
+                        <a class="button-clear venue-button" onClick="/* hideVideo(); */" onclick="ga('send', 'Links', 'Click', 'Venue Button');" style="margin-left:20px;" href="http://facebook.com/mhackshackathon">Sponsor MHacks</a>
                     </div>
                     <div id="facepile">
                         <div class="fb-facepile" data-href="http://facebook.com/MHacksHackathon" data-max-rows="1" data-size="large" data-width="300" data-colorscheme="dark"></div>
@@ -70,13 +70,15 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
             </div>
 
             <div id="content">
-            	<div class="container">
+            	<div class="container box">
                 	<div class="row clearfix">
                     	<h1>MHacks 2014 at The Big House</h1>
-                        <p>The best student hackathon meets<br>the biggest stadium in America</p>
+                        <p>The biggest student hackathon meets<br>the biggest stadium in America</p>
                         <img src="img/stadium-fade.jpg" style="width:100%;">
                     </div>
-                    <div id="about" class="row clearfix" style="padding-top:100px;">
+                </div>
+                <div class="container box">
+                    <div id="about" class="row clearfix box" style="padding-top:100px;">
                         <div class="left" style="padding-top:10px;">
                             <p>1500+ hackers</p>
                             <p>36 hours</p>
