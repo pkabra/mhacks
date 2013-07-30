@@ -434,7 +434,7 @@ html, body {
 		background-size:contain;
 		background-repeat:no-repeat;
 		-webkit-filter:grayscale(100%);
-		-webkit-transition: -webkit-filter 1s;  
+		-webkit-transition: -webkit-filter .5s;
 	}
 
 	.sponsor:hover {
