@@ -61,7 +61,7 @@ html, body {
 	border-bottom:3px solid #BD2C00;
 	text-shadow: 0px -1px 0px #374683;
 	cursor: pointer;
-	color: white;
+	color: white !important;
 	font-size: 30px;
 	margin: 0 auto;
 	-webkit-user-select: none;  /* Chrome all / Safari all */
@@ -408,6 +408,21 @@ html, body {
 		height:auto;
 	}
 
+	#sponsors > .container > h2 {
+		font-size: 60px;
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+
+	#sponsors > .container > h3 {
+		text-shadow: none;
+		font-weight: 400;
+		font-style:normal;
+		text-transform: none;
+		font-size: 24px;
+		line-height: 1em;
+	}
 
 	.sponsor {
 		display:block;
