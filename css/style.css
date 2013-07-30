@@ -9,13 +9,14 @@ body > * {
 	line-height: 1.4em;
 }
 
-
 section {
-	height: 993px;
+	height: 720px;
 	overflow: hidden;
 	text-align: center;
-	padding: 20%;
 	width: 100%;
+
+	position: relative;
+
 	-moz-box-sizing: border-box; 
 	-webkit-box-sizing: border-box; 
 	box-sizing: border-box;
@@ -35,20 +36,67 @@ html, body {
 
 
 
+.emphasis {
+	color: #FF5521;
+}
 
 
 
-/* Text Styles */
-h1,
-h2,
-h3,
-h4,
-h5{
-	font-weight:normal;
-	-webkit-font-smoothing: antialiased;
-	-moz-font-smoothing: antialiased;
-	-o-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-	text-rendering: optimizelegibility;
+
+
+/* Section-wide styles */
+#landing, #big-house {
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+
+
+.landing-title {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	color: white;
+	font-size: 48px;
+	text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
+
+
+
+
+
+#mute-button {
+	width:30px;
+	height:30px;
+	position:absolute;
+	top:59px;
+	left:5px;
+	background:url('../img/audio-on.png') no-repeat;
+	background-position:center;
+	background-size:cover;
+	z-index:2000;
+	cursor:pointer;
+}
+
+#background-video{
+	position:relative;
+	width:100%;
+	left:0;
+	z-index:0;
+}
+
+
+
+
+
+
+
+/* Section 1: Landing */
+#landing {
+	background-image:url('http://tednasmith.mymiddleearth.com/files/2012/08/TN-The_Riders_of_Rohan.jpg');
+}
+
+#big-house {
+	background-image: url('http://www.richincomeways.com/wp-content/uploads/2013/06/tupac.jpg');
 }
 
