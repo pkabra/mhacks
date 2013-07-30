@@ -374,6 +374,17 @@ html, body {
 	}
 
 
+	.sponsor {
+		display:block;
+		width:240px;
+		height:120px;
+		margin:20px 33px;
+		background-position:center center;
+		float:left;
+		background-size:contain;
+		background-repeat:no-repeat;
+	}
+
 
 
 /* ------ */
