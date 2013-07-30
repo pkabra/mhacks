@@ -26,15 +26,13 @@ $(document).ready(function(){
 //	    document.title = 'focused';
 		//video.play();
 		video.play();
-		$(video).animate({volume: 1}, 300);
+//		$(video).animate({volume: 1}, 300);
 	});
 
 	window.addEventListener('blur', function() {
 //	    document.title = 'not focused';
-		$(video).animate({volume: 0}, 300);
-		setTimeout(function(){
-			video.pause();
-		}, 300)
+//		$(video).animate({volume: 0}, 300);
+		video.pause();
 	});
 
 	//Redirect Mobile Users
