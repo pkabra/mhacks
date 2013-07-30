@@ -143,4 +143,9 @@ MHACKS IS FOREVER
 		font-size:30px;;
 	}
 
+	#sponsors > .container > h2 {
+		font-size: 36px;
+		margin-top: -20px;
+	}
+
 }
