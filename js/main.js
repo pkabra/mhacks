@@ -94,12 +94,7 @@ $(document).ready(function(){
 		return false;
 	});
 
-	$('#big-house').hover(function(){
-		$('.big-house-bg').addClass('colored');
-	}, function(){
-		$('.big-house-bg').removeClass('colored');
-	})
-	// $('.big-house').hover(function(){
+	// $('#big-house').hover(function(){
 	// 	$('.big-house-bg').addClass('colored');
 	// }, function(){
 	// 	$('.big-house-bg').removeClass('colored');
