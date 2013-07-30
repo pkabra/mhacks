@@ -93,6 +93,17 @@ $(document).ready(function(){
 		switchAudio();
 		return false;
 	});
+
+	$('#big-house').hover(function(){
+		$('.big-house-bg').addClass('colored');
+	}, function(){
+		$('.big-house-bg').removeClass('colored');
+	})
+	// $('.big-house').hover(function(){
+	// 	$('.big-house-bg').addClass('colored');
+	// }, function(){
+	// 	$('.big-house-bg').removeClass('colored');
+	// })
 });
 
 function switchAudio() {

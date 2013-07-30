@@ -70,15 +70,34 @@ html, body {
 	border-top:3px solid #BD2C00;
 }
 
-
-
-
 #big-house {
-	background-image: url('../img/bighouse2.jpg');
 }
 
+#big-house .container {
 
+}
 
+.big-house-bg {
+	-webkit-transition: -webkit-filter 1s;  
+	background-size:cover;
+	-webkit-filter: grayscale(100%);
+	background-image:url(../img/bighouse3.jpg);
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	z-index:-1;
+}
+
+.big-house-bg:hover {
+	-webkit-filter: grayscale(0%);	
+}
+
+.colored {
+	-webkit-filter: grayscale(25%);	
+}
 
 /* Section-wide styles */
 #landing, #big-house {
