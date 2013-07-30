@@ -21,6 +21,17 @@ function loadWebsite(){
 }
 
 $(document).ready(function(){
+
+	window.addEventListener('focus', function() {
+//	    document.title = 'focused';
+		video.play();
+	});
+
+	window.addEventListener('blur', function() {
+//	    document.title = 'not focused';
+		video.pause();
+	});
+
 	//Redirect Mobile Users
 	if((new RegExp('Mobile')).test(navigator.userAgent)){
 		if(screen.width < 1000){
