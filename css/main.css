@@ -165,7 +165,7 @@ p{
 }
 
 h1{
-	font-family: 'Junction', Helvetica, Arial, sans-serif;
+	font-family: "freight-sans-pro",' Junction', Helvetica, Arial, sans-serif;
 	font-size:34px;
 	text-align:center;
 }
@@ -404,11 +404,11 @@ a.button-clear:active {
 	font-weight: 200;
 	font-size:40px;
 	line-height:44px;
-	font-family: 'Junction', Helvetica, Arial, sans-serif;
+	font-family: "freight-sans-pro", 'Junction', Helvetica, Arial, sans-serif;
 }
 
 #content p{
-	font-family: 'Junction', Helvetica, Arial, sans-serif;
+	font-family: "freight-sans-pro", 'Junction', Helvetica, Arial, sans-serif;
 	line-height: 1.2;
 	font-size:28px;
 	color:#6a7181;
