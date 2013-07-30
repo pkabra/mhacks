@@ -1,4 +1,97 @@
-@media (max-width: 480px) {
+@media (max-width: 540px) {
 	body {
-/*		background: blue; */
+		min-width: 100%;
 	}
+
+	.mute {
+		display: none;
+	}
+
+	.landing-block {
+		position: relative;
+		margin: 20px auto;
+		top: auto;
+		left: auto;
+		width: 100%;
+	}
+
+	.landing-details,
+	.landing-title  {
+		color: black;
+	}
+
+	.landing-title {
+		font-size:32px;
+	}
+
+	.landing-date {
+		margin-top: 0px;
+	}
+
+	.landing-logo {
+		width: 100px;
+		margin: 20px auto;
+	}
+
+	section {
+		height: auto;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.background-video-wrapper {
+		display: none;
+	}
+
+	#stats {
+		height: auto;
+	}
+
+	#stats > .container > h2 {
+		font-size: 28px;
+		margin: 0;
+		text-align: center;
+	}
+
+	#big-house > .container > h1 {
+		text-align: center;
+		font-size:70px;
+		width: auto;
+	}
+
+	#big-house > .container > h2 {
+		text-align: center;
+		padding: 0px;
+		margin: 20px 0;
+		font-size: 36px;
+	}
+
+	#big-house > .container > h3 {
+		text-align: center;
+		margin-top: -10px;
+	}
+
+	.big-house-info {
+		width: auto;
+		float: none;
+		text-align: center;
+		font-size: 20px;
+	}
+
+	.footer > .container {
+		line-height: 28px;
+		padding: 20px;
+	}
+
+	.background-video-wrapper {
+		height: auto;
+	}
+
+	.background-video-wrapper img {
+		width: 100% !important;
+		height: 100%;
+	}
+
+}
