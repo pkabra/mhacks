@@ -148,4 +148,9 @@ MHACKS IS FOREVER
 		margin-top: -20px;
 	}
 
+	.sponsor {
+		-webkit-filter: grayscale(0%);
+		margin:20px 20px;
+	}
+
 }
