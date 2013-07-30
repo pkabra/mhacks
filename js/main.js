@@ -19,7 +19,6 @@ $(document).ready(function(){
 		//video.play();
 //		video.play();
 		video.play();
-		mute();
 //		$(video).animate({volume: 1}, 300);
 	});
 
@@ -27,6 +26,7 @@ $(document).ready(function(){
 //	    document.title = 'not focused';
 //		$(video).animate({volume: 0}, 300);
 		video.pause();
+		mute();
 	});
 
 	//Redirect Mobile Users
@@ -34,6 +34,10 @@ $(document).ready(function(){
 		// if(screen.width < 1000){
 		// 	window.location.href = "mobile.html";
 		// }
+		alert('test');
+		$('video').remove();
+		$('.placeholder-image').show();
+//	    $('video img').show();
 
 	}
 	//Begin Nasty Browser Compatibility stuff
