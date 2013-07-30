@@ -21,6 +21,8 @@ $(document).ready(function(){
 		mute();
 	});
 
+	video.play();
+
 	$('.sponsor').each(function(){
 		$(this).click(function(){
 			ga('send', 'Sponsors', 'Click', $(this).attr('href'));
