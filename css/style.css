@@ -133,3 +133,12 @@ html, body {
 		left:0;
 		z-index:0;
 	}
+
+	.mute {
+		color:#fff;
+		font-size:16px;
+		position:absolute;
+		top:20px;
+		right:30px;
+		text-decoration:none;
+	}

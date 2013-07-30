@@ -25,7 +25,10 @@ $(document).ready(function(){
 	window.addEventListener('focus', function() {
 //	    document.title = 'focused';
 		//video.play();
+//		video.play();
 		video.play();
+		video.muted = true;
+		$('#mute-button').css("background", "url('img/audio-mute.png') no-repeat").css('background-size', 'cover');
 //		$(video).animate({volume: 1}, 300);
 	});
 
