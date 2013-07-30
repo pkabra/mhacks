@@ -1,3 +1,10 @@
+/*
+
+MHACKS IS FOREVER
+
+*/
+
+
 @media (max-width: 540px) {
 	body {
 		min-width: 100%;
@@ -88,9 +95,35 @@
 		height: auto;
 	}
 
-	.background-video-wrapper img {
-		width: 100% !important;
-		height: 100%;
+	#logistics {
+		padding: 0px;
+	}
+
+	#logistics > .container > h2 {
+		text-align: center;
+		font-size: 36px;
+		margin-top:30px;
+		margin-bottom: 40px;
+	}
+
+	#logistics > .container > h4 {
+		width: 100%;
+		text-align: center;
+		line-height: 1.1em;
+		font-size: 20px;
+	}
+
+	#logistics > .container > h3 {
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.faq-block {
+		margin: 5px auto 0 0;
+		padding: 0px;
+		float: none;
+		width: 100%;
+		text-align: center;
 	}
 
 }
