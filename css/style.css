@@ -92,6 +92,10 @@ html, body {
 }
 
 
+.background-video-wrapper {
+/*	background-image:url();
+	background-size:cover;
+*/}
 
 
 /* ------------------ */
@@ -139,6 +143,7 @@ html, body {
 		top:50px;
 		right:40px;
 		text-decoration:none;
+		cursor:pointer;
 	}
 
 /* ---------------- */

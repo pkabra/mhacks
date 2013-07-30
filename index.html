@@ -61,15 +61,17 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
         }(document, 'script', 'facebook-jssdk'));</script>
 
 
-        <div id="mute-button" onclick="switchAudio();" style="background-size:cover; background-position:center;"></div>
 
         <section id="landing">
 
-            <video id="background-video" loop preload="auto" autoplay>
-                <source src="http://d385d9sgj3wiu1.cloudfront.net/mhacks.mp4" type="video/mp4">
-                <source src="./video/bg.ogg" type="video/ogg">
-            </video>
-
+            <div class="background-video-wrapper">
+                <video id="background-video" loop preload="auto" autoplay>
+                    <source src="http://d385d9sgj3wiu1.cloudfront.net/mhacks.mp4" type="video/mp4">
+                    <source src="./video/bg.ogg" type="video/ogg">
+                    <img src="http://dummyimage.com/800x600" />
+                </video>
+                <img class="placeholder-image" src="http://f.cl.ly/items/3v3J0X3r3l0n3j3Q1h2y/Screen%20Shot%202013-07-30%20at%203.48.09%20AM.png" style="display:none;" />
+            </div>
             <!-- <div id="facepile">
                 <div class="fb-facepile" data-href="http://facebook.com/MHacksHackathon" data-max-rows="1" data-size="large" data-width="300" data-colorscheme="dark">
                 </div>
@@ -92,7 +94,7 @@ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$ | \$$\ \$$$$$$  |
 
 
 
-            <a href="#mute" class="mute">
+            <a class="mute">
                 Mute
             </a>
 

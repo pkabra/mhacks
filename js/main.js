@@ -12,14 +12,6 @@ navigator.sayswho= (function(){
     return M;
 })();
 
-function loadWebsite(){
-	//Fix a bug where preloading doesn't work.
-	if(navigator.sayswho[0] == "Firefox" || navigator.sayswho[0] == "MSIE"){
-		video.play();
-	}
-	
-}
-
 $(document).ready(function(){
 
 	window.addEventListener('focus', function() {
@@ -27,8 +19,6 @@ $(document).ready(function(){
 		//video.play();
 //		video.play();
 		video.play();
-		video.muted = true;
-		$('#mute-button').css("background", "url('img/audio-mute.png') no-repeat").css('background-size', 'cover');
 //		$(video).animate({volume: 1}, 300);
 	});
 
@@ -36,13 +26,19 @@ $(document).ready(function(){
 //	    document.title = 'not focused';
 //		$(video).animate({volume: 0}, 300);
 		video.pause();
+		mute();
 	});
 
 	//Redirect Mobile Users
 	if((new RegExp('Mobile')).test(navigator.userAgent)){
-		if(screen.width < 1000){
-			window.location.href = "mobile.html";
-		}
+		// if(screen.width < 1000){
+		// 	window.location.href = "mobile.html";
+		// }
+		alert('test');
+		$('video').remove();
+		$('.placeholder-image').show();
+//	    $('video img').show();
+
 	}
 	//Begin Nasty Browser Compatibility stuff
 	if(navigator.sayswho[0] == "MSIE" || (video.tagName != "video" && video.tagName != "VIDEO")){
@@ -92,26 +88,31 @@ $(document).ready(function(){
 		//prevent the browser from jumping down to section.
 		event.preventDefault();
 	});
-});
 
-function hideVideo() {
-	$('#background-video').animate({opacity: "0"}, 1000);
-	$('#location').fadeIn(1500);
-	$(".venue-button").text("Now I'm pumped!");
-	//Setting timeout because button would cause fast redirect issue
-	setTimeout(function(){$('.venue-button').attr('href', 'https://www.facebook.com/events/191595097676108/').attr('target', '_blank');}, 1000);
-}
+	$('.mute').click(function(e){
+		switchAudio();
+		return false;
+	});
+});
 
 function switchAudio() {
 	//if video is muted, unmute and show audo on button and vice versa
 	if(video.muted) {
-		ga('send', 'Audio', 'Unmute');
-		video.muted = false;
-		$('#mute-button').css("background", "url('img/audio-on.png') no-repeat").css('background-size', 'cover');
+		unMute();
 	}
 	else {
-		ga('send', 'Audio', 'Mute');
-		video.muted = true;
-		$('#mute-button').css("background", "url('img/audio-mute.png') no-repeat").css('background-size', 'cover');
+		mute();
 	}
+}
+
+function unMute(){
+	ga('send', 'Audio', 'Unmute');
+	video.muted = false;
+	$('.mute').text('Mute');	
+}
+
+function mute(){
+	ga('send', 'Audio', 'Mute');
+	video.muted = true;
+	$('.mute').text('Unmute');	
 }
