@@ -86,6 +86,7 @@ a.button-blue:hover {
 	background: -ms-linear-gradient(#6e9ffc, #4d7dd6);
 	background: -o-linear-gradient(#6e9ffc, #4d7dd6);
 	text-decoration: none;
+	color:#fff;
 }
 
 a.button-blue:active {
@@ -121,6 +122,7 @@ a.button-clear:hover {
 	-moz-box-shadow:none;
 	box-shadow: none;
 	text-decoration: none;
+	color:#fff;
 }
 
 a.button-clear:active {
