@@ -376,6 +376,8 @@ html, body {
 		font-size: 18px;
 		line-height: 1.2em;
 		text-align: right;
+		/* HACKY SOLUTION */
+		margin-top:  -35px;
 	}
 
 	.contact-info > h3 {
