@@ -190,6 +190,20 @@ html, body {
 		margin-top:-25px;
 	}
 
+	.landing-location a {
+		color: white;
+		-o-transition:.25s;
+		-ms-transition:.25s;
+		-moz-transition:.25s;
+		-webkit-transition:.25s;
+		transition:.25s;
+	}
+
+	.landing-location a:hover {
+		cursor: pointer;
+		color: #FF5521;
+	}
+
 
 
 
@@ -300,6 +314,20 @@ html, body {
 		text-transform: none;
 	}
 
+	#logistics > .container > h4 a {
+		color: black;
+		-o-transition:.25s;
+		-ms-transition:.25s;
+		-moz-transition:.25s;
+		-webkit-transition:.25s;
+		transition:.25s;
+	}
+
+	#logistics > .container > h4 a:hover {
+		cursor: pointer;
+		color: #FF5521;
+	}
+
 	#logistics > .container > h3 {
 		text-align: left;
 		font-size: 30px;
@@ -335,6 +363,16 @@ html, body {
 		line-height: 1.2em;
 		margin-bottom: 0px;
 	}
+
+
+/* ------------------- */
+/* Section 5: Sponsors */
+/* ------------------- */
+	
+	#sponsors {
+		padding: 50px 0;
+	}
+
 
 
 
