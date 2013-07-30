@@ -1,3 +1,9 @@
+@media (min-width: 481px) {
+	body {
+		min-width: 960px;
+	}
+}
+
 
 /* Scratchpad */
 body > * {
@@ -17,14 +23,13 @@ section {
 
 	position: relative;
 
+	-moz-box-shadow:    1px 1px 1px 1px #ccc;
+  	-webkit-box-shadow: 1px 1px 1px 1px #ccc;
+  	box-shadow:         1px 1px 1px 1px #ccc;
+
 	-moz-box-sizing: border-box; 
 	-webkit-box-sizing: border-box; 
 	box-sizing: border-box;
-
-
-	-moz-box-shadow:    inset 0 0 10px #000000;
-   	-webkit-box-shadow: inset 0 0 10px #000000;
-   	box-shadow:         inset 0 0 10px #000000;
 }
 
 html, body {
@@ -43,29 +48,32 @@ html, body {
 	width: 280px;
 	border-radius: 5px;
 	background-color: #FF5521;
-	border-top:2px solid #FF6F3B;
-	border-left:2px solid #FF6F3B;
-	border-right:3px solid #CC5930;
-	border-bottom:3px solid #CC5930;
+	border-top:1px solid #FF6F3B;
+	border-left:1px solid #FF6F3B;
+	border-right:3px solid #BD2C00;
+	border-bottom:3px solid #BD2C00;
 	text-shadow: 0px -1px 0px #374683;
 	cursor: pointer;
 	color: white;
 	font-size: 30px;
 	margin: 0 auto;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+  	-moz-user-select: none;     /* Firefox all */
+  	-ms-user-select: none; 
 }
 
 .mhacks-button:active {
-	border-right:2px solid #FF6F3B;
-	border-bottom:2px solid #FF6F3B;
-	border-left:3px solid #CC5930;
-	border-top:3px solid #CC5930;
+	border-right:1px solid #FF6F3B;
+	border-bottom:1px solid #FF6F3B;
+	border-left:3px solid #BD2C00;
+	border-top:3px solid #BD2C00;
 }
 
 
 
 
 #big-house {
-	background-image: url('http://www.richincomeways.com/wp-content/uploads/2013/06/tupac.jpg');
+	background-image: url('../img/bighouse2.jpg');
 }
 
 
@@ -77,6 +85,11 @@ html, body {
 	background-repeat:no-repeat;
 }
 
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
 
 
 
@@ -112,21 +125,6 @@ html, body {
 		width: 100%;
 	}
 
-	#mute-button {
-		width:30px;
-		height:30px;
-		position:absolute;
-		top:59px;
-		left:5px;
-		background:url('../img/audio-on.png') no-repeat;
-		background-position:center;
-		background-size:cover;
-		z-index:2000;
-		cursor:pointer;
-
-		display:none;
-	}
-
 	#background-video{
 		position:relative;
 		width:100%;
@@ -138,7 +136,70 @@ html, body {
 		color:#fff;
 		font-size:16px;
 		position:absolute;
-		top:20px;
-		right:30px;
+		top:50px;
+		right:40px;
 		text-decoration:none;
+	}
+
+/* ---------------- */
+/* Section 2: Stats */
+/* ---------------- */
+
+	#stats {
+		padding: 75px 0;
+		height: 500px;
+	}
+	
+	#stats > .container > h2 {
+		font-size: 90px;
+		text-align: right;
+		text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+		margin: 50px 0;
+	}
+
+	#stats > .container > h3 {
+		font-size: 24px;
+		text-align: right;
+		margin-top: 220px;
+		display: none;
+	}
+
+/* -------------------- */
+/* Section 3: Big House */
+/* -------------------- */
+
+	#big-house {
+		padding: 50px 0;
+		color: white;
+	}
+	
+	#big-house > .container > h3 {
+		text-align: left;
+		margin-top: 35px;
+	}
+
+	#big-house > .container > h2 {
+		font-size: 70px;
+		text-align: left;
+		padding-right: 200px;
+		margin-top:-30px;
+	}
+
+	#big-house > .container > h1 {
+		font-size: 130px;
+		text-align: center;
+		width: 600px;
+		line-height: 0.8em;
+		margin:0 auto;
+		margin-top: -10px;
+	}
+
+	.big-house-info {
+		width: 300px;
+		float: right;
+		font-size: 28px;
+		line-height: 30px;
+		margin-top: 40px;
+		text-align: right;
+		text-shadow: 1px 1px 2px rgba(100, 100, 100, 1);
 	}
