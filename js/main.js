@@ -24,12 +24,17 @@ $(document).ready(function(){
 
 	window.addEventListener('focus', function() {
 //	    document.title = 'focused';
+		//video.play();
 		video.play();
+		$(video).animate({volume: 1}, 1000);
 	});
 
 	window.addEventListener('blur', function() {
 //	    document.title = 'not focused';
-		video.pause();
+		$(video).animate({volume: 0}, 1000);
+		setTimeout(function(){
+			video.pause();
+		}, 1000)
 	});
 
 	//Redirect Mobile Users
