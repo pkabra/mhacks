@@ -5,7 +5,6 @@
 }
 
 
-/* Scratchpad */
 body > * {
 	font-family: "proxima-nova", Helvetica, Arial, sans-serif;
 	font-weight: 900 ;
@@ -42,9 +41,6 @@ html, body {
 	color: #FF5521;
 }
 
-
-
-
 .mhacks-button {
 	width: 280px;
 	border-radius: 5px;
@@ -70,16 +66,6 @@ html, body {
 	border-top:3px solid #BD2C00;
 }
 
-
-
-
-#big-house {
-	background-image: url('../img/bighouse2.jpg');
-}
-
-
-
-
 /* Section-wide styles */
 #landing, #big-house {
 	background-size:cover;
@@ -93,10 +79,10 @@ html, body {
 }
 
 
-.background-video-wrapper {
-/*	background-image:url();
-	background-size:cover;
-*/}
+
+
+
+
 
 
 /* ------------------ */
@@ -106,7 +92,7 @@ html, body {
 	#landing {
 	}
 
-	.landing-info {
+	.landing-block {
 		width:400px;
 		position: absolute;
 		top: 50px;
@@ -126,7 +112,7 @@ html, body {
 		margin: 40px auto;
 	}
 
-	.landing-info img {
+	.landing-block img {
 		width: 100%;
 	}
 
@@ -142,10 +128,30 @@ html, body {
 		font-size:16px;
 		position:absolute;
 		top:50px;
-		right:40px;
+		right:70px;
 		text-decoration:none;
 		cursor:pointer;
 	}
+
+	.landing-details {
+		font-weight: 800;
+		color: white;
+		font-size: 20px;
+		text-transform: normal;
+	}
+
+	.landing-date {
+		margin-top:20px;
+	}
+
+	.landing-location, .landing-school {
+		margin-top:-25px;
+	}
+
+
+
+
+
 
 /* ---------------- */
 /* Section 2: Stats */
@@ -170,6 +176,12 @@ html, body {
 		display: none;
 	}
 
+
+
+
+
+
+
 /* -------------------- */
 /* Section 3: Big House */
 /* -------------------- */
@@ -177,6 +189,7 @@ html, body {
 	#big-house {
 		padding: 50px 0;
 		color: white;
+		background-image: url('../img/bighouse2.jpg');
 	}
 	
 	#big-house > .container > h3 {
