@@ -21,6 +21,12 @@ $(document).ready(function(){
 		mute();
 	});
 
+	$('.sponsor').each(function(){
+		$(this).click(function(){
+			ga('send', 'Sponsors', 'Click', $(this).attr('href'));
+		});
+	});
+
 	$('.mute').click(function(e){
 		switchAudio();
 		return false;
