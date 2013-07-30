@@ -51,6 +51,7 @@ html, body {
 }
 
 .mhacks-button {
+	display:block;
 	width: 280px;
 	border-radius: 5px;
 	background-color: #FF5521;
@@ -404,6 +405,7 @@ html, body {
 	
 	#sponsors {
 		padding: 50px 0;
+		height:auto;
 	}
 
 
@@ -416,6 +418,12 @@ html, body {
 		float:left;
 		background-size:contain;
 		background-repeat:no-repeat;
+		-webkit-filter:grayscale(100%);
+		-webkit-transition: -webkit-filter 1s;  
+	}
+
+	.sponsor:hover {
+		-webkit-filter:grayscale(0%);
 	}
 
 
