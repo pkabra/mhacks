@@ -6,6 +6,8 @@ var refreshcount = 0;
 
 $(document).ready(function(){
 
+	mute();
+
 	window.addEventListener('focus', function() {
 //	    document.title = 'focused';
 		//video.play();
@@ -65,5 +67,5 @@ function unMute(){
 function mute(){
 	ga('send', 'Audio', 'Mute');
 	video.muted = true;
-	$('.mute').text('Unmute');	
+	$('.mute').text('Play Music');	
 }
