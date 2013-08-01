@@ -140,17 +140,20 @@ MHACKS IS FOREVER
 	}
 
 	.contact-info > h3 {
-		font-size:30px;;
+		font-size:30px;
 	}
 
 	#sponsors > .container > h2 {
 		font-size: 36px;
-		margin-top: -20px;
+		margin-top: -20px;	
 	}
 
 	.sponsor {
 		-webkit-filter: grayscale(0%);
 		margin:20px 20px;
+		width:120px;
+		height:60px;
+		margin:10px 10px;
 	}
 
 }
