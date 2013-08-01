@@ -20,7 +20,7 @@ $(document).ready(function(){
 //	    document.title = 'not focused';
 //		$(video).animate({volume: 0}, 300);
 //		video.pause();
-		mute();
+//		mute();
 	});
 
 	video.play();
