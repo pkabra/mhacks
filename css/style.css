@@ -439,6 +439,11 @@ html, body {
 		-webkit-filter:grayscale(100%);
 		-webkit-transition: -webkit-filter .5s;
 	}
+	
+	.sponsor.big-sponsor {
+		width:853px;
+		height:240px;
+	}
 
 	.sponsor:hover {
 		-webkit-filter:grayscale(0%);
