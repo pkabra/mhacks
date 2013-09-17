@@ -437,7 +437,9 @@ html, body {
 		background-size:contain;
 		background-repeat:no-repeat;
 		-webkit-filter:grayscale(100%);
-		-webkit-transition: -webkit-filter .5s;
+		opacity:.7;
+/*		-webkit-transition: -webkit-filter .5s;
+*/		transition: -webkit-filter, opacity .5s;
 	}
 	
 	.sponsor.big-sponsor {
@@ -446,6 +448,7 @@ html, body {
 	}
 
 	.sponsor:hover {
+		opacity:1;
 		-webkit-filter:grayscale(0%);
 	}
 
