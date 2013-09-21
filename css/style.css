@@ -463,3 +463,9 @@ html, body {
 		text-align: center;
 		text-shadow: none;
 	}
+
+.top-bar {
+	font-style:normal;
+	font-weight:normal;
+	padding:5px 0;
+}
